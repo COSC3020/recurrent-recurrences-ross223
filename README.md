@@ -49,11 +49,11 @@ Take i = logn
    
    ...
 
-   = 13^iT(n/13^i) + 5 $\sum_{j=0} 13^j$
+   = 13^iT(n/13^i) + 5 $\sum_{j=0}^i 13^j$
    
 Take i = log(n)
 
-   = nT(1) + 5$\sum_{j=0}^\log(n) 13^j$ = $\Theta n$
+   = nT(1) + 5 $\sum_{j=0}^log(n) 13^j$ = $\Theta n$
 
 3. T(n) = 13T(n/13) + 2n
    
