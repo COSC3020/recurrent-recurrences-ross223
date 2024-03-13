@@ -49,7 +49,7 @@ Take i = logn
    
    ...
 
-   = 13^iT(n/13^i) + 5$\sum$ $13^j$
+   = 13^iT(n/13^i) + 5 $\sum 13^j$
    
 Take i = log(n)
 
