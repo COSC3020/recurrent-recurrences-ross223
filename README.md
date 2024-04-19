@@ -27,7 +27,9 @@ $$ T(n) =
     \end{cases}
 $$
 
-1. T(n) = T(1/13) + 5
+1. Solve by Substitution:
+   
+T(n) = T(1/13) + 5
    
    = T(n/169) + 5 + 5
    
@@ -37,11 +39,17 @@ $$
    
    = T(n/13^i) + 5i
    
-Take i = logn
+For i = logn
 
-   = T(1) + 5log(n) = $\Theta log(n)$
+   = T(1) + 5log(n)
+   
+   5log(n) $\in \Theta log(n)$
 
-2. T(n) = 13T(n/13) + 5
+Therefore, T(n) exists in $\Theta log(n)$
+
+2. Solve by Substitution:
+   
+T(n) = 13T(n/13) + 5
    
    = 13(13T(n/169) + 5) + 5
    
@@ -51,11 +59,17 @@ Take i = logn
 
    = 13^iT(n/13^i) + 5 $\sum_{j=0}^{i} 13^j$
    
-Take i = log(n)
+For i = log(n)
 
-   = nT(1) + 5 $\sum_{j=0}^{log(n)} 13^j$ = $\Theta n$
+   = nT(1) + 5 $\sum_{j=0}^{log(n)} 13^j$
+   
+   n + 5n $\sum_{j=0}^{i} 13^j \in \Theta n$
 
-3. T(n) = 13T(n/13) + 2n
+Therefore, T(n) exists in $\Theta (n)$
+
+3. Solve by Substitution:
+   
+T(n) = 13T(n/13) + 2n
    
    = 13(13(n/169) + 2(n/13)) + 2n
    
@@ -65,6 +79,9 @@ Take i = log(n)
    
    = 13^iT(n/13^i) + 2in
    
-Take i = log(n)
+For i = log(n)
 
-   = n + 2nlog(n) = $\Theta nlog(n)$
+   = T(1)n + 2nlog(n)
+   n + 2nlog(n) $\in \Theta nlog(n)$
+
+Therefore, T(n) exists in $\Theta(nlog(n))$
