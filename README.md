@@ -85,3 +85,7 @@ For i = log(n)
    n + 2nlog(n) $\in \Theta nlog(n)$
 
 Therefore, T(n) exists in $\Theta(nlog(n))$
+
+## Sources
+
+Keifer Buss helped me with the second relation here
